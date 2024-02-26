@@ -1,5 +1,5 @@
 import { Route, Router } from 'electron-router-dom'
-import { Blank } from './pages/blank'
+import { Document } from './pages/document'
 import { DefaultLayout } from './pages/layout/default'
 
 export const Routes = () => {
@@ -7,7 +7,7 @@ export const Routes = () => {
     <Router
       main={
         <Route path='/' element={<DefaultLayout />}>
-          <Route path='/' element={<Blank />} />
+          <Route path='/' element={<Document />} />
         </Route>
       }
     />
